@@ -1,0 +1,64 @@
+###
+GET http://localhost:3000/hello
+//wyświetlenie hello
+###
+GET  http://localhost:3000/products
+//wyświetlenie talblicy produktów
+//product
+###
+
+POST http://localhost:3000/products HTTP/1.1
+content-type: application/json
+
+{
+    "id":"1",
+    "name": "Toster",
+    "description": "Toster z wkładami",
+    "price": 150
+}
+//dodanie do tablicy elementu
+###
+DELETE http://localhost:3000/products/1 HTTP/1.1
+###
+PUT http://localhost:3000/products/ 
+content-type: application/json
+
+{
+    "id":"1",
+    "name":"Toster lepszy",
+    "description":"Toster z wkładami lepszy",
+    "price":200
+}
+
+
+
+
+//funkcje dla category
+###
+GET  http://localhost:3000/categories  HTTP/1.1
+//wyświetlenie talblicy produktów
+//product
+###
+
+POST http://localhost:3000/categories 
+content-type: application/json
+
+{
+    "id":"2",
+    "name": "AGD",
+    "quantity": 100
+    
+}
+//dodanie do tablicy elementu
+###
+DELETE http://localhost:3000/categories/2 
+###
+PUT http://localhost:3000/categories/ 
+content-type: application/json
+
+{
+    "id":"2",
+    "name": "AGD Premium",
+    "quantity":5
+    
+}

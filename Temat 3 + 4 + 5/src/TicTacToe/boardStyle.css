@@ -1,0 +1,9 @@
+body{
+    justify-content: center !important;
+    display:flex;
+}
+#tictactoe td{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}

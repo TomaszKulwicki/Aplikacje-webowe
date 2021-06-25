@@ -1,0 +1,54 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+//Height
+$height-side:100vh;
+//Padding
+$padding-basic:10px;
+$padding-button:15px 32px;
+//Margin
+$margin-basic:10px;
+//Font
+$fontsize-basic:40px;
+$fontsize-button:30px;
+//Colors
+$color-bakcground:#d42a2a;
+    $color-text: #E1E0DE;
+    $color-button:#463535;
+    $color-white:white;
+:root{
+    --color-bakcground:#0f1e50;
+    --color-text: #E1E0DE;
+    --color-button:#5f3e72;
+    --color-white:white;
+}
+[data-theme='dark']{
+    --color-bakcground:rgb(156, 146, 146);
+    --color-button:rgb(128, 128, 128);
+}
+
+@mixin flexCenter() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: $height-side;
+    text-align: center;
+}
+@mixin mode-button() {
+    
+    background-color: var(--color-button); 
+    margin: $margin-basic;
+    border: none;
+    color: $color-white;
+    padding: $padding-button;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $fontsize-button;
+}
